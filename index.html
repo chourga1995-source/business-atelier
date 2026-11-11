@@ -1052,6 +1052,7 @@ function welcome() {
   o.querySelector("#w-s").onclick = () => { DB = sampleDB(); save(); o.remove(); route(); };
   o.querySelector("#w-b").onclick = () => { DB = blankDB(); save(); o.remove(); location.hash = "#setup"; route(); };
 }
+try { if (navigator.storage && navigator.storage.persist) navigator.storage.persist(); } catch (e) {}
 if ('serviceWorker' in navigator && location.protocol.startsWith('http')) { try { navigator.serviceWorker.register('sw.js'); } catch (e) {} }
 DB = load();
 if (!DB) { DB = blankDB(); if (/[?&]sample/.test(location.search)) { DB = sampleDB(); save(); route(); } else { route(); welcome(); } } else route();
