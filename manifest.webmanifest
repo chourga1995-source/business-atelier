@@ -1,0 +1,28 @@
+{
+ "name": "The Business Atelier \u2014 Executive Command Center",
+ "short_name": "Atelier",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#070B11",
+ "theme_color": "#070B11",
+ "orientation": "any",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
